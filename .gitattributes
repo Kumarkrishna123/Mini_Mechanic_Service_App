@@ -1,0 +1,13 @@
+# Normalise to LF in the repository so the tree does not show as modified
+# when cloned on macOS or Linux.
+* text=auto eol=lf
+
+*.png binary
+*.webp binary
+*.jpg binary
+*.jar binary
+*.keystore binary
+*.jks binary
+
+gradlew text eol=lf
+gradlew.bat text eol=crlf
