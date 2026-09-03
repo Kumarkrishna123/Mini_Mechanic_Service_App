@@ -16,3 +16,6 @@ local.properties
 
 # Kotlin 2.x build session data
 .kotlin/
+
+# IDE
+/.idea/
