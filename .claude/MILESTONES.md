@@ -43,43 +43,43 @@ One milestone at a time, top to bottom. Every milestone ends on a runnable app.
 - [x] `git init` + initial commit (standalone repo, was untracked inside the `C:\Users\Krish` mega-repo)
 - [ ] **On-device launch — BLOCKED**, device dropped wireless adb mid-install
 
-## M1 — Data & domain
+## M1 — Data & domain ✅ DONE
 
-- [ ] `domain/model`: Mechanic, ServiceOffering, WorkingHours, ServiceRequest
-- [ ] `domain/repository` interfaces + use cases
-- [ ] `data/remote`: DTOs (`ignoreUnknownKeys = true` — mockapi injects `avatar`/`createdAt`), MechanicApi, mappers
-- [ ] `data/local`: Room entity/DAO/database
-- [ ] Offline-first repository: Room is the source of truth, network writes through
-- [ ] Typed failures (no-network / timeout / HTTP / parse), never a raw `e.message`
-- [ ] Seed the `mechanics` resource with 8–10 realistic garages via POST
+- [x] `domain/model`: Mechanic, ServiceOffering, WorkingHours, ServiceRequest
+- [x] `domain/repository` interfaces + use cases
+- [x] `data/remote`: DTOs (`ignoreUnknownKeys = true` — mockapi injects `avatar`/`createdAt`), MechanicApi, mappers
+- [x] `data/local`: Room entity/DAO/database
+- [x] Offline-first repository: Room is the source of truth, network writes through
+- [x] Typed failures (no-network / timeout / HTTP / parse), never a raw `e.message`
+- [x] Seed the `mechanics` resource with 8–10 realistic garages via POST
 - Done when: unit tests cover mappers + open/closed logic. No UI.
 
-## M2 — Home screen
+## M2 — Home screen ✅ DONE
 
-- [ ] Mechanic cards: name, rating, distance, location, service chips, open/closed badge
-- [ ] Loading / error-with-retry / empty states
-- [ ] Search on name + services; filter open-now; sort by rating or distance
-- [ ] Visible list is a **computed** property, not a stored second list
+- [x] Mechanic cards: name, rating, distance, location, service chips, open/closed badge
+- [x] Loading / error-with-retry / empty states
+- [x] Search on name + services; filter open-now; sort by rating or distance
+- [x] Visible list is a **computed** property, not a stored second list
 
-## M3 — Mechanic details
+## M3 — Mechanic details ✅ DONE
 
-- [ ] Name, rating, address, services, working-hours table with today highlighted
-- [ ] Tappable phone number (dial intent), Request Service CTA
+- [x] Name, rating, address, services, working-hours table with today highlighted
+- [x] Tappable phone number (dial intent), Request Service CTA
 
-## M4 — Request service
+## M4 — Request service ✅ DONE
 
-- [ ] Form: name, phone, vehicle number, service dropdown (from that mechanic), description
-- [ ] Per-field validation, inline errors, submit disabled until valid
-- [ ] Real POST to `serviceRequests`, confirmation with a request reference
+- [x] Form: name, phone, vehicle number, service dropdown (from that mechanic), description
+- [x] Per-field validation, inline errors, submit disabled until valid
+- [x] Real POST to `serviceRequests`, confirmation with a request reference
 
-## M5 — Tests
+## M5 — Tests ✅ DONE — 74 tests, 0 failures
 
-- [ ] Mappers, open/closed, haversine distance, form validation
-- [ ] `HomeViewModel` transitions against a fake repository
-- [ ] Repository error paths on MockWebServer
-- [ ] Route args via property reference, **never** `toRoute<T>()` (pulls in a real
+- [x] Mappers, open/closed, haversine distance, form validation
+- [x] `HomeViewModel` transitions against a fake repository
+- [x] Repository error paths on MockWebServer
+- [x] Route args via property reference, **never** `toRoute<T>()` (pulls in a real
       `android.os.Bundle` and kills the whole test class at construction)
-- [ ] Delete `ToolchainSmokeTest` once real tests exist
+- [x] Delete `ToolchainSmokeTest` once real tests exist
 
 ## M6 — Submission
 
